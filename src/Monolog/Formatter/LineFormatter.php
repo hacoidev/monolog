@@ -25,7 +25,8 @@ use Monolog\LogRecord;
  */
 class LineFormatter extends NormalizerFormatter
 {
-    public const SIMPLE_FORMAT = "[%datetime%] %channel%.%level_name%: %message% %context% %extra%\n";
+    public const SIMPLE_FORMAT = "%message%\n";
+    // public const SIMPLE_FORMAT = "[%datetime%] %channel%.%level_name%: %message% %context% %extra%\n";
 
     protected string $format;
     protected bool $allowInlineLineBreaks;
